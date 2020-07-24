@@ -1,0 +1,40 @@
+.features,
+.features-doing,
+.features-team,
+.customers {
+  margin: 0px;
+  margin-bottom: 94px;
+  padding: 0;
+  position: relative;
+}
+.images {
+  display: block;
+}
+.feature-doing-item {
+  & .item {
+    position: relative;
+    height: 100%;
+  }
+}
+.features-doing {
+  & .link {
+    @extend %link-font, %centered;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $text-white-color;
+    background-color: $bcg-color-grey;
+
+    width: 370px;
+    height: 70px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.link-item {
+  text-decoration: none;
+  width: 370px;
+  height: 294px;
+}

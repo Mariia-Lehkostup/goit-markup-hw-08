@@ -1,0 +1,33 @@
+.footer {
+  max-width: 100%;
+  height: 253px;
+  margin: 0 auto;
+  background-color: #2f303a;
+}
+.footer-style {
+  display: flex;
+  align-items: center;
+}
+
+.logo-footer {
+  display: block;
+  margin-top: 60px;
+}
+.logo-bottom {
+  margin-bottom: 20px;
+  font: bold 26px/31px Raleway, serif;
+}
+.logo-bottom {
+  &:hover,
+  :focus {
+    text-decoration: underline $link-text-color;
+  }
+}
+.footer-address {
+  width: 231px;
+  margin-right: 69px;
+}
+.logo-styd,
+.address {
+  color: $text-white-color;
+}

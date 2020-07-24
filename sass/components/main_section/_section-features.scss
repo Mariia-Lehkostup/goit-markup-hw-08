@@ -1,0 +1,58 @@
+.features {
+  margin-bottom: 94px;
+  /* height: 251px; */
+}
+.features-item,
+.feature-doing-item,
+.features-team-item,
+.customers-item,
+.footer-address-item,
+.hero-site-item {
+  @extend %flex;
+}
+.features-item .item + .item,
+.feature-doing-item .item + .item,
+.features-team-item .item + .item,
+.customers-item .item + .item {
+  margin-left: 30px;
+}
+.features-icon {
+  width: 270px;
+  height: 120px;
+  left: 215px;
+  top: 774px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  padding: 25px 102px;
+}
+.features-doing,
+.features-team,
+.customers {
+  & .title {
+    @extend %title-font;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+    text-align: center;
+  }
+}
+
+.features {
+  & .title {
+    @extend %link-font;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $title-text-color;
+    width: 270px;
+    margin-bottom: 10px;
+  }
+}
+.features {
+  & .text {
+    color: $text-color;
+    line-height: 24px;
+    font-size: 14px;
+    width: 270px;
+    letter-spacing: 0.03em;
+  }
+}

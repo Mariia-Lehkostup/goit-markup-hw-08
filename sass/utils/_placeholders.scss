@@ -1,0 +1,32 @@
+%centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+%button-style {
+  background: $link-text-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font: bold 16px/30px Roboto, serif;
+  color: $text-white-color;
+}
+%flex {
+  display: flex;
+}
+%title-font {
+  font: bold 36px/42px Roboto, serif;
+}
+%link-font {
+  font: bold 14px/16px Roboto, serif;
+}
+// %notification {
+//   background-color: #ccc;
+//   font-size: 20px;
+//   padding: 20px;
+// }
+
+// %list {
+//   padding: 0;
+//   margin: 0;
+//   list-style: none;
+// }

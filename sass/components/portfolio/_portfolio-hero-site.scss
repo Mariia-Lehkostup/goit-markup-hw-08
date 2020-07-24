@@ -1,0 +1,27 @@
+.hero-site {
+  text-align: center;
+  margin-bottom: 50px;
+  & .link {
+    color: $title-text-color;
+    font: 500 16px/26px Roboto, serif;
+    letter-spacing: 0.03em;
+    justify-content: center;
+    margin-bottom: 34px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    padding: 6px 22px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.hero-site .link + .link {
+  margin-left: 8px;
+}
+.hero-site .link:hover,
+.hero-site .link:focus {
+  color: $text-white-color;
+  background-color: $bcg-btn-color;
+}

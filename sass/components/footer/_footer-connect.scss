@@ -1,0 +1,50 @@
+.connect,
+.address {
+  font: normal 14px/24px Roboto, serif;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  margin-bottom: 9px;
+  display: flex;
+  align-items: center;
+}
+
+.title-connect {
+  @extend %link-font;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $text-white-color;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.footer-address-item .item-footer + .item-footer {
+  margin-left: 10px;
+}
+.subscription {
+  display: block;
+  align-items: center;
+  margin-left: 94px;
+}
+.item-footer {
+  @extend %centered;
+  width: 44px;
+  height: 44px;
+
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.item-footer {
+  & .icon {
+    fill: $text-white-color;
+  }
+}
+.item-footer:hover,
+.item-footer:focus {
+  border-radius: 50%;
+  background-color: $bcg-btn-color;
+  fill: $text-white-color;
+}

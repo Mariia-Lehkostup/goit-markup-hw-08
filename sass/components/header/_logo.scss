@@ -1,0 +1,18 @@
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font: bold 26px/31px $font-secondary, serif;
+  &:hover,
+  &:focus {
+    text-decoration: underline $link-text-color;
+  }
+}
+.logo-web {
+  color: $link-text-color;
+}
+.logo-st {
+  color: $text-black-color;
+}

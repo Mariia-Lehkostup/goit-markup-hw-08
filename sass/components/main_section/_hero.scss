@@ -1,0 +1,47 @@
+.hero {
+  position: relative;
+  min-height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 94px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../image/Headerimg.jpg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero .title {
+  color: $text-white-color;
+  font: 900 44px/60px Roboto, serif;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero .link {
+  color: $text-white-color;
+  font: bold 16px/30px Roboto, serif;
+  padding: 10px 32px;
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  background-color: $link-text-color;
+}
+.hero-img {
+  max-width: 100%;
+}
