@@ -13,45 +13,33 @@
   </head>
   <body class="disable-scroll"> 
 <!-- header -->
-    <header>
-      <div class="container header">
-        <div class="header-logo">
-          <div class="logo">
-          <a href="/index.html">
-            <span class="logo-web">Web</span>
-            <span class="logo-st">Studio</span>
-            </a >
-        </div>
-        <nav>
-          <ul class="site-nav">
-            <li class="site-nav item">
-              <a href="./index.html" class="link curent">Студия</a>
-            </li>
-            <li class="site-nav item">
-              <a href="./portfolio.html" class="link">Портфолио</a>
-            </li>
-            <li class="site-nav item"><a href="" class="link">Контакты</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="header-contact">
-            <a class="link" href="mailto:info@devstudio.com">
-             
-              <svg class="icon-mail link">
-                <use href="./sprite.svg#icon-mail"></use>
-              </svg>     
-              <span>info@devstudio.com</span> 
-            </a >       
-            <a class="link" href="tel:+380961111111">
-             
-            <svg class="icon-phone link">
-              <use href="./sprite.svg#icon-smartphone"></use>
-            </svg>
-              <span>+38 096 111 11 11</span> 
-            </a>
-      </div>
-      </div> 
-    </header>
+  <header class="header container">
+    <div class="header__left-side">
+      <a class="header__logo" href="/index.html">
+        <span class="header__logo-web">Web</span>
+        <span class="header__logo-st">Studio</span>
+      </a>
+      <nav class="header__nav">
+        <a href="./index.html" class="header__nav-link active">Студия</a>
+        <a href="./portfolio.html" class="header__nav-link">Портфолио</a>
+        <a href="" class="header__nav-link">Контакты</a>
+      </nav>
+    </div>
+    <div class="header__contacts">
+      <a class="header__contacts-mail contact" href="mailto:info@devstudio.com">
+        <svg class="icon">
+          <use  href="./sprite.svg#icon-mail"></use>
+        </svg>
+        <span class="header__contacts-text">info@devstudio.com</span>
+      </a>
+      <a class="header__contacts-tel contact" href="tel:+380961111111">
+        <svg class="icon">
+          <use href="./sprite.svg#icon-smartphone"></use>
+        </svg>
+        <span class="header__contacts-text">+38 096 111 11 11</span>
+      </a>
+    </div>
+  </header>
     <main class="main-section">
       <!-- effective solutions -->
 
@@ -568,6 +556,7 @@
           </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

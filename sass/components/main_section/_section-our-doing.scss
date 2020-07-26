@@ -1,3 +1,9 @@
+.features-doin {
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+}
+
 .features,
 .features-doing,
 .features-team,
@@ -23,6 +29,10 @@
     text-transform: uppercase;
     color: $text-white-color;
     background-color: $bcg-color-grey;
+
+    @media screen and (min-width: 480px) {
+      display: block;
+    }
 
     width: 370px;
     height: 70px;

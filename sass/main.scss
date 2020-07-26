@@ -1,11 +1,9 @@
 @import './utils/variables';
 @import './utils/placeholders';
 @import './utils/mixins';
+@import './components/container';
 @import './base/normalize';
-@import './components/header/page-header';
-@import './components/header/logo';
-@import './components/header/sitenav';
-@import './components/header/header-contact';
+@import './components/header/index.scss';
 @import './components/main_section/main-section';
 @import './components/main_section/hero';
 @import './components/main_section/form';
