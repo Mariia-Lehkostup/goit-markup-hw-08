@@ -9,6 +9,9 @@
 .footer-address-item,
 .hero-site-item {
   @extend %flex;
+  @media screen and (min-width: 480px) {
+    display: block;
+  }
 }
 .features-item .item + .item,
 .feature-doing-item .item + .item,
