@@ -1,13 +1,18 @@
-.header__logo {
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
   font: bold 26px/31px $font-secondary, serif;
-  &-web {
-    color: $link-text-color;
-  }
-  &-st {
-    color: $text-black-color;
-  }
   &:hover,
   &:focus {
     text-decoration: underline $link-text-color;
   }
+}
+.logo-web {
+  color: $link-text-color;
+}
+.logo-st {
+  color: $text-black-color;
 }

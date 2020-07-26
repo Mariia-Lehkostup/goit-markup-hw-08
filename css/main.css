@@ -1,4 +1,4 @@
-.icon-form, .icon-form-close, .features-doing .link, .list-icon-item, .icon, .item-footer {
+.header, .icon-form, .icon-form-close, .features-doing .link, .list-icon-item, .icon, .item-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,30 +38,6 @@
 
 .features .title, .features-doing .link, .title-connect {
   font: bold 14px/16px Roboto, serif;
-}
-
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
 }
 
 /*! modern-normalize v0.6.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -362,6 +338,13 @@ body {
   margin: 0;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 ul {
   list-style: none;
   margin: 0 auto;
@@ -376,100 +359,50 @@ a {
   text-decoration: none;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.header__contacts-mail, .header__contacts-tel {
+.header-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #757575;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.header__contacts .contact + .contact {
-  margin-left: 30px;
-}
-
-.header__contacts .contact:hover, .header__contacts .contact:focus {
-  color: #2196f3;
-}
-
-.header__contacts .contact:hover .icon, .header__contacts .contact:focus .icon {
-  fill: #2196f3;
-}
-
-.header__contacts-text {
-  margin-left: 10px;
-}
-
-.header__logo {
+.logo {
   font: bold 26px/31px Raleway, serif;
 }
 
-.header__logo-web {
-  color: #2196f3;
-}
-
-.header__logo-st {
-  color: #000000;
-}
-
-.header__logo:hover, .header__logo:focus {
+.logo:hover, .logo:focus {
   -webkit-text-decoration: underline #2196f3;
           text-decoration: underline #2196f3;
 }
 
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 80px;
+.logo-web {
+  color: #2196f3;
 }
 
-.header__left-side,
-.header__contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.logo-st {
+  color: #000000;
 }
 
-.header__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 80px;
+.site-nav {
   margin-left: 85px;
-}
-
-.header__nav-link {
+  margin-top: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+.site-nav .link {
   color: #212121;
   font: 500 14px/16px Raleway, serif;
   letter-spacing: 0.02em;
+  display: block;
+  padding-bottom: 32px;
   position: relative;
 }
 
-.header__nav-link.active:after, .header__nav-link:hover:after, .header__nav-link:focus:after {
+.site-nav .link:after {
   content: '';
   bottom: 0;
   left: 0;
@@ -478,12 +411,88 @@ img {
   position: absolute;
   background-color: #2196f3;
   border-radius: 20px;
+  opacity: 0;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header__nav-link + .header__nav-link {
+.site-nav .item + .site-nav .item {
   margin-left: 50px;
+}
+
+.site-nav .curent:after {
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  background-color: #2196f3;
+  border-radius: 20px;
+  opacity: 1;
+}
+
+.site-nav .link:hover, .site-nav .link:focus {
+  color: #2196f3;
+}
+
+.site-nav .link:hover:after, .site-nav .link:focus:after {
+  opacity: 1;
+}
+
+.header-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: auto;
+}
+
+.header-contact .link {
+  color: #757575;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-contact .link + .link {
+  margin-left: 30px;
+}
+
+.header-contact .link:hover, .header-contact .link:focus {
+  color: #2196f3;
+  fill: #2196f3;
+}
+
+.link:hover .icon-mail,
+.link:focus .icon-mail {
+  fill: #2196f3;
+}
+
+.link:hover .icon-phone,
+.link:focus .icon-phone {
+  fill: #2196f3;
+}
+
+/* svg-icon */
+.icon-mail {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: #757575;
+}
+
+.icon-phone {
+  width: 10px;
+  height: 15px;
+  margin-right: 10px;
+  fill: #757575;
 }
 
 .main-section {
@@ -494,7 +503,7 @@ img {
 .hero {
   position: relative;
   min-height: 600px;
-  max-width: 100%;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -795,17 +804,6 @@ input:focus .icon-check-Vector {
   /* height: 251px; */
 }
 
-@media screen and (min-width: 480px) {
-  .features-item,
-  .feature-doing-item,
-  .features-team-item,
-  .customers-item,
-  .footer-address-item,
-  .hero-site-item {
-    display: block;
-  }
-}
-
 .features-item .item + .item,
 .feature-doing-item .item + .item,
 .features-team-item .item + .item,
@@ -848,12 +846,6 @@ input:focus .icon-check-Vector {
   letter-spacing: 0.03em;
 }
 
-@media screen and (min-width: 480px) {
-  .features-doin {
-    display: none;
-  }
-}
-
 .features,
 .features-doing,
 .features-team,
@@ -883,12 +875,6 @@ input:focus .icon-check-Vector {
   position: absolute;
   bottom: 0;
   left: 0;
-}
-
-@media screen and (min-width: 480px) {
-  .features-doing .link {
-    display: block;
-  }
 }
 
 .link-item {
@@ -1004,12 +990,6 @@ input:focus .icon-check-Vector {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-@media screen and (min-width: 480px) {
-  .customers-item .link {
-    display: block;
-  }
 }
 
 .customers-item .link:hover,

@@ -1,82 +1,47 @@
-.header__contacts {
-  &-mail,
-  &-tel {
-    display: flex;
+.header-contact {
+  @include centeredFlex(unset);
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: auto;
+  & .link {
     color: $text-color;
-    align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  & .contact + .contact {
-    margin-left: 30px;
-  }
-  .contact {
+}
+.header-contact .link + .link {
+  margin-left: 30px;
+}
+
+.header-contact {
+  & .link {
     &:hover,
     &:focus {
-      .icon {
-        fill: $link-text-color;
-      }
       color: $link-text-color;
+      fill: $link-text-color;
     }
-  }
-  &-text {
-    margin-left: 10px;
   }
 }
 
-// .header-contact {
-//   @include centeredFlex(unset);
-//   margin-top: 32px;
-//   margin-bottom: 32px;
-//   margin-left: auto;
-//   position: relative;
-//   @media screen and (min-width: 480px) {
-//     display: block;
-//   }
-//   & .link {
-//     color: $text-color;
-//     display: block;
-//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-//       fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//   }
-// }
-// .header-contact .link + .link {
-//   margin-left: 30px;
-// }
+.link:hover .icon-mail,
+.link:focus .icon-mail {
+  fill: $link-text-color;
+}
+.link:hover .icon-phone,
+.link:focus .icon-phone {
+  fill: $link-text-color;
+}
+/* svg-icon */
+.icon-mail {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: $text-color;
+}
 
-// .header-contact {
-//   & .link {
-//     &:hover,
-//     &:focus {
-//       color: $link-text-color;
-//       fill: $link-text-color;
-//     }
-//   }
-// }
-
-// .link:hover .icon-mail,
-// .link:focus .icon-mail {
-//   fill: $link-text-color;
-// }
-// .link:hover .icon-phone,
-// .link:focus .icon-phone {
-//   fill: $link-text-color;
-// }
-// /* svg-icon */
-// .icon-mail {
-//   width: 16px;
-//   height: 12px;
-//   margin-right: 10px;
-//   fill: $text-color;
-//   position: absolute;
-//   top: 0%;
-//   left: 0;
-// }
-
-// .icon-phone {
-//   width: 10px;
-//   height: 15px;
-//   margin-right: 10px;
-//   fill: $text-color;
-//   position: absolute;
-//   top: 50%;
-//   left: 0;
-// }
+.icon-phone {
+  width: 10px;
+  height: 15px;
+  margin-right: 10px;
+  fill: $text-color;
+}
