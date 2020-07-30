@@ -1,17 +1,14 @@
 .features {
   margin-bottom: 94px;
+  letter-spacing: 0.03em;
   /* height: 251px; */
 }
-.features-item,
-.feature-doing-item,
-.features-team-item,
-.customers-item,
-.footer-address-item,
-.hero-site-item {
+.features-item {
   @extend %flex;
-  @media screen and (min-width: 480px) {
-    display: block;
-  }
+  flex-wrap: wrap;
+}
+.features {
+  @extend %features-position;
 }
 .features-item .item + .item,
 .feature-doing-item .item + .item,
@@ -29,21 +26,10 @@
   margin-bottom: 30px;
   padding: 25px 102px;
 }
-.features-doing,
-.features-team,
-.customers {
-  & .title {
-    @extend %title-font;
-    letter-spacing: 0.03em;
-    color: $title-text-color;
-    text-align: center;
-  }
-}
 
 .features {
   & .title {
     @extend %link-font;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $title-text-color;
     width: 270px;
@@ -56,6 +42,5 @@
     line-height: 24px;
     font-size: 14px;
     width: 270px;
-    letter-spacing: 0.03em;
   }
 }

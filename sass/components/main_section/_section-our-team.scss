@@ -1,3 +1,16 @@
+.features-team {
+  & .title {
+    @extend %section-title;
+  }
+}
+.features-team-item {
+  @extend %flex;
+  flex-wrap: wrap;
+}
+
+.features-team {
+  @extend %features-position;
+}
 .section-team {
   display: flex;
   justify-content: center;
@@ -13,6 +26,10 @@
 }
 .section-team-work + .section-team-work {
   margin-left: 30px;
+}
+.team-img {
+  width: 100%;
+  height: auto;
 }
 .features-team {
   font: normal 16px/19px Roboto, serif;

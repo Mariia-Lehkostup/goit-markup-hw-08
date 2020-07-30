@@ -3,7 +3,7 @@
 @import './utils/mixins';
 @import './components/container';
 @import './base/normalize';
-@import './components/header/index.scss';
+@import './components/header/index';
 @import './components/main_section/main-section';
 @import './components/main_section/hero';
 @import './components/main_section/form';
@@ -14,6 +14,6 @@
 @import './components/footer/footer-logo';
 @import './components/footer/footer-form';
 @import './components/footer/footer-connect';
-@import './components/portfolio/header-portfolio';
 @import './components/portfolio/portfolio-hero-site';
 @import './components/portfolio/portfolio-flex-container';
+@import './adoption/index';

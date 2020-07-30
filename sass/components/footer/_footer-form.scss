@@ -1,5 +1,9 @@
+.subscription {
+  display: block;
+  margin-left: 94px;
+}
 .form-field-footer {
-  display: inline-flex;
+  display: flex;
   position: relative;
   & input {
     border: 1px solid rgba(255, 255, 255, 0.3);

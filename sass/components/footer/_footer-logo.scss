@@ -4,30 +4,35 @@
   margin: 0 auto;
   background-color: #2f303a;
 }
-.footer-style {
+.footer__style {
   display: flex;
   align-items: center;
+  &-logo {
+    display: block;
+    margin-top: 60px;
+  }
 }
 
-.logo-footer {
-  display: block;
-  margin-top: 60px;
-}
 .logo-bottom {
   margin-bottom: 20px;
   font: bold 26px/31px Raleway, serif;
-}
-.logo-bottom {
   &:hover,
   :focus {
     text-decoration: underline $link-text-color;
   }
+  .logo-styd {
+    color: $text-white-color;
+  }
 }
-.footer-address {
+.footer-address,
+.connect {
   width: 231px;
   margin-right: 69px;
-}
-.logo-styd,
-.address {
   color: $text-white-color;
+  font: normal 14px/24px Roboto, serif;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  margin-bottom: 9px;
+  display: flex;
+  align-items: center;
 }

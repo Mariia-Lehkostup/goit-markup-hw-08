@@ -1,0 +1,104 @@
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .header {
+    position: relative;
+  }
+  .features-item {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .features {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    & .title {
+      text-align: center;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    & .text {
+      width: 100%;
+    }
+  }
+
+  .features-item .item + .item {
+    margin-left: 0;
+  }
+  .features-icon {
+    width: 100%;
+  }
+  .features-doing {
+    display: none;
+  }
+  .section-team {
+    height: 2201px;
+  }
+  .section-team-work + .section-team-work {
+    margin-left: 0;
+  }
+  .section-team-work {
+    width: 100%;
+    height: 482px;
+    margin-bottom: 30px;
+    background-color: $text-white-color;
+  }
+  .team-img {
+    height: 320px;
+  }
+  .customers-item {
+    align-items: center;
+    justify-content: center;
+    .link {
+      width: 210px;
+    }
+  }
+  .customers-item .item + .item {
+    margin-left: 0;
+  }
+  .customers-item .item {
+    margin-bottom: 30px;
+  }
+
+  .customers-item .item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+  .footer {
+    height: 603px;
+  }
+  .footer__style {
+    display: block;
+    text-align: center;
+  }
+  .form-field-footer {
+    display: block;
+  }
+  .footer-address,
+  .connect {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .connect {
+    font: normal 14px/24px Roboto, serif;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .title-connect {
+    display: block;
+    text-align: center;
+    // margin: auto;
+  }
+  .subscription {
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+  .button-svg {
+    bottom: 13px;
+    right: 50px;
+  }
+}
