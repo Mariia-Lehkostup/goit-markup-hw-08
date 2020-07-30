@@ -19,6 +19,19 @@
 %link-font {
   font: bold 14px/16px Roboto, serif;
 }
+%section-title {
+  font: bold 36px/42px Roboto, serif;
+  letter-spacing: 0.03em;
+  color: $title-text-color;
+  text-align: center;
+}
+%features-position {
+  margin: 0px;
+  margin-bottom: 94px;
+  padding: 0;
+  position: relative;
+}
+
 // %notification {
 //   background-color: #ccc;
 //   font-size: 20px;

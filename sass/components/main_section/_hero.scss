@@ -15,8 +15,14 @@
   background-size: auto;
   background-repeat: no-repeat;
   background-position: center;
+  width: 100%;
+  height: auto;
 }
 
+.hero-site-item {
+  @extend %flex;
+  flex-wrap: wrap;
+}
 .hero .title {
   color: $text-white-color;
   font: 900 44px/60px Roboto, serif;
@@ -44,4 +50,5 @@
 }
 .hero-img {
   max-width: 100%;
+  height: auto;
 }

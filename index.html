@@ -19,26 +19,38 @@
         <span class="header__logo-web">Web</span>
         <span class="header__logo-st">Studio</span>
       </a>
-      <nav class="header__nav">
+      <nav class="header__nav menu-container " id="menu-container" data-menu>
         <a href="./index.html" class="header__nav-link active">Студия</a>
         <a href="./portfolio.html" class="header__nav-link">Портфолио</a>
         <a href="" class="header__nav-link">Контакты</a>
       </nav>
     </div>
-    <div class="header__contacts">
-      <a class="header__contacts-mail contact" href="mailto:info@devstudio.com">
+    <div class="header__contacts menu-container " id="menu-container" data-menu>
+      <a class="header__contacts-mail contact " href="mailto:info@devstudio.com">
         <svg class="icon">
           <use  href="./sprite.svg#icon-mail"></use>
         </svg>
-        <span class="header__contacts-text">info@devstudio.com</span>
+        <span class="header__contacts-textr">info@devstudio.com</span>
       </a>
       <a class="header__contacts-tel contact" href="tel:+380961111111">
         <svg class="icon">
           <use href="./sprite.svg#icon-smartphone"></use>
         </svg>
         <span class="header__contacts-text">+38 096 111 11 11</span>
-      </a>
+      </a> 
     </div>
+
+
+          <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="icon-cross" href="./sprite.svg#cross"></use>
+              <use class="icon-menu" href="./sprite.svg#menu"></use>
+            </svg>
+          </button>
+          
+
+
+
   </header>
     <main class="main-section">
       <!-- effective solutions -->
@@ -122,8 +134,8 @@
       </section>
       <!-- description of solutions -->
       <section class="features">
-        <div class="section-features">
-          <div class="section-item-features container">
+        <!-- <div class="section-features"> -->
+          <div class="container">
             <ul class="features-item">
               <li class="item">
                 <img
@@ -175,7 +187,7 @@
               </li>
             </ul>
           </div>
-        </div>
+        <!-- </div> -->
       </section>
       <!-- our doin -->
       <section class="features-doing">
@@ -213,7 +225,7 @@
             <h3 class="title">Наша команда</h3>
             <ul class="features-team-item">
               <li class="section-team-work">
-                <img src="./image/foto1.svg" alt="John Smith" />
+                <img class="team-img" src="./image/foto1.svg" alt="John Smith" />
                 <div>
                   <h4 class="name">Николай Кучеренко</h4>
                   <span class="profession">Product Designe</span>
@@ -270,7 +282,7 @@
                 </div>
               </li>
               <li class="section-team-work">
-                <img src="./image/foto2.svg" alt="Marta Stewart" />
+                <img  class="team-img" src="./image/foto2.svg" alt="Marta Stewart" />
                 <div>
                   <h4 class="name">Ольга Иванова</h4>
 
@@ -316,7 +328,7 @@
               </li>
 
               <li class="section-team-work">
-                <img src="./image/foto3.svg" alt="Robert Jakis" />
+                <img  class="team-img" src="./image/foto3.svg" alt="Robert Jakis" />
                 <div>
                   <h4 class="name">Андрей Шевченко</h4>
                   <span class="profession">Marketing</span>
@@ -361,7 +373,7 @@
               </li>
 
               <li class="section-team-work">
-                <img src="./image/foto4.svg" alt="Robert Jakis" />
+                <img  class="team-img" src="./image/foto4.svg" alt="Robert Jakis" />
                 <div>
                   <h4 class="name">Иван Николаев</h4>
                   <span class="profession">UI Designer</span>
@@ -411,8 +423,7 @@
 
       <!-- regular customers -->
       <section class="customers">
-        <div class="section-customers">
-          <div class="section-customers-features container">
+          <div class=" container">
             <h3 class="title">Постоянные клиенты</h3>
             <ul class="customers-item">
               <li class="item">
@@ -464,92 +475,64 @@
               </li>
             </ul>
           </div>
-        </div>
+       
       </section>
     </main>
 
     <!-- footer -->
     <footer class="footer">
-      <div class="container footer-nav">
-        <div class="footer-style">
-          
-            <div class="logo-footer">
+      <div class="container ">
+        <div class="footer__style">
+            <div class="footer__style-logo">
               <div class="logo-bottom">
               <a href="/index.html">
-                <span class="logo-web">Web</span>
+                <span class="header__logo-web">Web</span>
                 <span class="logo-styd">Studio</span>
               </a >
               </div>
-            <ul class="footer-address">
-              <li>
-                <address class="address">
+                <address class="footer-address">
                   г. Киев, пр-т Леси Украинки, 26
                 </address>
-              </li>
-              <li>
                 <a href="mailto:info@example.com" class="connect"
-                  >info@example.com</a
-                >
-              </li>
-              <li>
+                  >info@example.com</a>
                 <a href="tel:+380991111111" class="connect"
-                  >+38 099 111 11 11</a
-                >
-              </li>
-            </ul>
+                  >+38 099 111 11 11</a>
           </div>
-          <div >
+          <div class="connection">
             <p class="title-connect ">присоединяйтесь</p>
-            <ul class="footer-address-item">
-              <li class="item-footer">
-                <a href="https://www.instagram.com/?hl=ru" target="_blank">
+            <div class="connection__footer-address">
+                <a class=" item-footer" href="https://www.instagram.com/?hl=ru" target="_blank">
                   <svg class="icon">
                     <use href="./sprite.svg#icon-instagram"></use>
                   </svg>
-                 
                 </a>
-              </li>
-              <li class="item-footer">
-                <a href="https://twitter.com/explore" target="_blank">
+                <a class=" item-footer" href="https://twitter.com/explore" target="_blank">
                   <svg class="icon">
                     <use href="./sprite.svg#icon-twitter"></use>
                   </svg>
-                 
                 </a>
-              </li>
-              <li class="item-footer">
-                <a href="https://facebook.com" target="_blank">
+                <a class=" item-footer" href="https://facebook.com" target="_blank">
                   <svg class="icon">
                     <use href="./sprite.svg#icon-facebook"></use>
                   </svg>
-                  
                 </a>
-              </li>
-              <li class="item-footer">
-               
-                <a href="https://www.linkedin.com/" target="_blank">
+                <a class=" item-footer" href="https://www.linkedin.com/" target="_blank">
                   <svg class="icon">
                     <use href="./sprite.svg#icon-linkedin"></use>
                   </svg>
-                  
                 </a>
-              </li>
-            </ul>
           </div>
-          
+          </div>
           <div class="subscription">
             <p class="title-connect ">Подпишитесь на рассылку</ps>
         <form >
           <div class="form-field-footer">
             <label class="form-field-mail" for="mail"></label>
             <input type="email" name="mail" id="mail" placeholder="E-mail" />
-           
              <button class="form-field-button" type="submit">Подписаться</button>
              <svg class="button-svg">
-               <use href="./sprite.svg#icon-iconsend"></use>
-
+               <use  href="./sprite.svg#icon-iconsend"></use>
              </svg>
-          
           </div>
         </form>
           </div>

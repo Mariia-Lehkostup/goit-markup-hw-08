@@ -1,17 +1,19 @@
-.features-doin {
+.features-doing {
   @media screen and (min-width: 480px) {
     display: none;
   }
 }
-
-.features,
-.features-doing,
-.features-team,
-.customers {
-  margin: 0px;
-  margin-bottom: 94px;
-  padding: 0;
-  position: relative;
+.feature-doing-item {
+  @extend %flex;
+  flex-wrap: wrap;
+}
+.features-doing {
+  & .title {
+    @extend %section-title;
+  }
+}
+.features-doing {
+  @extend %features-position;
 }
 .images {
   display: block;
